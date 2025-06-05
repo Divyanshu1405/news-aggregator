@@ -1,12 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="dark">
 
 <head>
-    <title>News Aggregator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FetchPress</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
-    <h1>Welcome to the News Aggregator</h1>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <header class="flex items-center justify-between p-4 shadow-md bg-white dark:bg-gray-800">
+        <div class="flex items-center gap-3">
+            <button id="menuButton" class="text-2xl font-bold">⋮</button>
+            <img src="../assets/logo.png" alt="FetchPress Logo" class="h-8 w-8">
+            <span class="text-xl font-semibold">FetchPress</span>
+        </div>
+    </header>
+
+    <nav class="flex justify-around bg-gray-100 dark:bg-gray-700 py-2">
+        <button class="nav-btn" data-category="">Home</button>
+        <button class="nav-btn" data-category="technology">Technology</button>
+        <button class="nav-btn" data-category="sports">Cricket</button>
+        <button class="nav-btn" data-category="politics">Politics</button>
+        <button class="nav-btn" data-category="more">More</button>
+    </nav>
+
+    <div class="p-4">
+        <input id="searchInput" type="text" placeholder="Search news..."
+            class="w-full p-2 rounded border dark:bg-gray-800 dark:border-gray-600" />
+    </div>
+
+    <main id="newsContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
+        <!-- News cards will be injected here -->
+    </main>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
