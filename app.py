@@ -4,9 +4,8 @@ from newsapi import fetch_news
 import os
 from datetime import datetime
 
-# Create Flask app
 app = Flask(__name__)
-CORS(app)  # Allow cross-origin requests
+CORS(app)  
 
 # Configuration
 DEBUG_MODE = True

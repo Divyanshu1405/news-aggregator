@@ -13,9 +13,8 @@ BASE_URL = "https://newsapi.org/v2"
 DEFAULT_TIMEOUT = 15
 DEFAULT_PAGE_SIZE = 50
 MAX_RETRIES = 2
-RETRY_DELAY = 1  # seconds
+RETRY_DELAY = 1
 
-# Politics keywords for better search results
 POLITICS_KEYWORDS = [
     "politics", "government", "election", "congress", "senate", 
     "president", "political", "Biden", "Trump", "Congress", 

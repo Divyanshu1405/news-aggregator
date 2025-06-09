@@ -1,6 +1,4 @@
-// Wait for the page to fully load before running our code
 document.addEventListener("DOMContentLoaded", () => {
-  // Get all the important elements from our HTML page
   const newsContainer = document.getElementById("newsContainer");
   const searchInput = document.getElementById("searchInput");
   const loadingSpinner = document.getElementById("loadingSpinner");
@@ -15,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Store saved articles in browser storage.
   let savedArticles = JSON.parse(localStorage.getItem('savedArticles')) || [];
 
-  // Update the little badge that shows how many articles we've saved
+  // Update the badge showing saved articles.
   function updateSavedCount() {
     if (savedArticles.length > 0) {
       savedCountBadge.textContent = savedArticles.length;
@@ -39,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Force the browser to refresh the background
     body.style.backgroundImage = 'none';
-    body.offsetWidth; // This tricks the browser into refreshing
+    body.offsetWidth; 
     body.style.backgroundImage = '';
 
     console.log(`Theme switched to: ${isDarkMode ? 'dark' : 'light'} mode`);
