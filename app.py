@@ -262,7 +262,6 @@ if __name__ == "__main__":
     # Start server
     log_message(" Server starting...")
     log_message(" Frontend available at: http://localhost:5000")
-    log_message(" API available at: http://localhost:5000/api/")
     
     if not env_ok:
         log_message("  Server will start but news fetching may not work without API key")
