@@ -34,8 +34,8 @@ A modern news aggregator web application that provides filtered news based on ca
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/fetchpress.git
-   cd fetchpress
+   https://github.com/Divyanshu1405/news-aggregator.git
+   cd news-aggregator
    ```
 
 2. **Install dependencies**
